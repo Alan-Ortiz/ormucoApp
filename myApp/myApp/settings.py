@@ -25,7 +25,7 @@ SECRET_KEY = '7j_mf-uj6!@+_(i5ymo)bw7=e)(fi=_hqqmbftrn4n3m3lm+%p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [*]
 
 
 # Application definition
@@ -78,9 +78,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME' : 'ormuco',
-        'USER' : 'root',
-        'password' : '',
-        'default-character-set' : 'utf8'
+        'USER' : 'ormuco',
+        'password' : 'ormuco321',
+        'HOST' : 'dbserver'
     }
 }
 
